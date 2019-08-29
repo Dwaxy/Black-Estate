@@ -8,14 +8,14 @@ $(function() {
 
 
 bottemBlurbTrigger = document.querySelector(".hero-title")
-bottomBlurb = document.querySelector(".bottem-blurb")
+bottomBlurb = document.querySelector("#bottem-blurb")
 console.log(bottomBlurb)
 new Waypoint({
   element: bottemBlurbTrigger,
   handler: function(direction) {
     if (direction === "down") {
       console.log(bottomBlurb)
-      bottomBlurb.classList.add("fadeInLeft ainimated")
+      bottomBlurb.classList.add("fadeInUp", "ainimated")
     }
   }
 })
