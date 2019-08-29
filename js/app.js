@@ -14,7 +14,7 @@ new Waypoint({
   element: bottemBlurbTrigger,
   handler: function(direction) {
     if (direction === "down") {
-      console.log("down")
+      console.log(bottomBlurb)
       bottomBlurb.classList.add("fadeInLeft ainimated")
     }
   }
