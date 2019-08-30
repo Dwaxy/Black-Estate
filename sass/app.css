@@ -83,7 +83,7 @@ body, html {
 
 .section-two .sidebar .hero-blurb {
   position: absolute;
-  top: 30%;
+  top: 15vh;
 }
 
 .section-two .hover-image {
