@@ -1,0 +1,42 @@
+#store-page
+    .store-feed
+        width: 100%
+        position: relative
+        display: block
+        .store-item
+            width: 900px
+            max-height: 1500px
+            margin: 0 auto
+            margin-bottom: 100px
+            img
+                width: 300px
+                +coverImage()
+            .info-holder
+                padding: 30px
+            .info
+                background-color: rgba(230, 212, 212, 0.39)
+                padding: 30px
+                // height: calc(100% - 100px)
+                p
+                    padding: 20px 60px 20px 60px
+            .title-and-price
+                display: flex
+                align-items: center
+                span
+                    font-size: 25px
+                    margin: 30px
+            .buttons
+                display: flex
+                height: 80px
+                padding 0 30px 0 30px
+                .btn
+                    cursor: pointer
+                    width: 50%
+                    height: 80px
+                    +flexCenter()
+                    &:first-child
+                        background-color: #969988
+                    &:last-child
+                        background-color: #8A6061
+
+    
