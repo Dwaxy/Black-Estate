@@ -11,6 +11,7 @@ const bottomBLurbWaypoint = new Waypoint({
       //bottomBlurb.classList.add("fadeInUp", "ainimated")
       $("#bottom-blurb").attr('class', 'animated fadeInUp hero-blurb slow')
       $("#top-blurb").attr('class', 'animated fadeOutDown hero-blurb slow')
+      console.log("down")
     }
   }
 })
@@ -21,6 +22,7 @@ const topBlurbWaypoint = new Waypoint({
     if(direction === "up") {
       $("#top-blurb").attr('class', 'animated fadeInUp hero-blurb slow')
       $("#bottom-blurb").attr('class', "animated fadeOutUp hero-blurb slow")
+      console.log("up")
     }
   }
 })

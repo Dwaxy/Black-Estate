@@ -12,7 +12,7 @@
 <div id="store-page">
 
     <!-- NAV COMP-->
-    <div class="columns nav-comp">
+    <div class="columns" id="nav-comp">
 
         <div class="column">
             <div class="container logo-holder">
@@ -29,6 +29,7 @@
                     <li><a>Accommodation</a></li>
                     <li><a>Restarunt</a></li>
                     <li><a>Vineyard</a></li>
+                    <span> <img src="images/icons/icons8-shopping-cart-30.png" alt="Shopping Cart""></span>
                 </ul>
             </div>
         </div>
@@ -55,8 +56,8 @@
                             <p>Fruit for this Riesling is sourced from our Damsteep Vineyard which is located in the north east of Waipara Valley at the foot of the Omihi saddle in North Canterbury. This hillside vineyard was planted in 1999 on clay and limestone rich soils. The soils in the Riesling vineyard are very dense clay brown to orange in colour and inter bedded with sandstones and subordinate limestone horizons. This 2.2 hectare hillside vineyard has a vine density of more than 5000 vine per hectare and is planted with GM110, GM198 and GM239 clones on 101-14 rootstock.  It is certified organic with BioGro.</p>
                         </div>
                         <div class="buttons">
-                            <div class="btn">View</div>
-                            <div class="btn">Add To Cart</div>
+                            <a href="/store-item.html" class="btn">View</a> 
+                            <a href="#" class="btn">Add To Cart</a> 
                         </div>
                     </div>
                 </div>
@@ -146,5 +147,8 @@
     <!-- END FOOTER -->
 
 </div>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="js/lib/nav.js"></script>
+<script src="js/store/store.js"></script>
 </body>
 </html>
