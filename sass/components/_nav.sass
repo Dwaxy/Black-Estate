@@ -1,11 +1,18 @@
-.nav-comp
+#nav-comp
+    position: fixed
+    width: 100%
+    background-color: $mainWhite
+    z-index: 9999999
+    height: 80px
     .logo-holder
         padding: 40px
     .tabs 
         position: fixed
-        right: 0
+        right: 40px
         *
             border-bottom: none
             text-decoration: none
+        li, span
+            cursor: pointer
         .active
             text-decoration: underline
