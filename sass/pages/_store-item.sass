@@ -1,0 +1,40 @@
+#store-item
+    .section-one
+        //height: calc(100vh - 60px)
+        margin: 0 auto
+        padding-top: 60px
+        .image-holder, .info-holder
+            height: calc(100vh - 120px)
+        .image-holder
+            +flexCenter()
+            img
+                max-width: 300px
+                +coverImage()
+        .info-holder
+            display: flex
+            align-items: center
+            .info-content
+                width: 50%
+                min-width: 300px
+        .buttons
+            div
+                +flexCenter()
+                height: 90px
+                padding: 0
+            .add-to-cart
+                background-color: #8A6061
+            .buy-now
+                background-color: #969988
+            .tasting-notes
+                background-color: #9698A6
+    .section-two
+        background-color: #F5EEEE
+        margin: 0 auto
+        .text-block
+            padding: 20px
+            padding-right: 100px
+            max-width: 1000px
+            margin: 0 auto
+            letter-spacing: 0.4px
+            &:last-child
+                padding-bottom: 100px
