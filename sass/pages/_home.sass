@@ -3,6 +3,11 @@
 // Sidebar Text
 //    
 
+
+// ! TEMP
+$tablet: 1020px
+$mobile: 500px
+
 .sidebar
     position: relative
     height: 100vh
@@ -61,6 +66,41 @@
             position: absolute
             top: 20vh
 
+    @media only screen and (max-width: $tablet)
+        .hero
+            .sidebar
+                height: 0px
+            #top-blurb, .section-two-title
+                display: none
+            .logo-holder
+                background-color: $mainWhite
+                +flexCenter()
+                img
+                    max-width: 300px
+            .nav-holder
+                // REMOVE 
+                display: none
+                // REMOVE
+                z-index: 9999999
+                height: 280px
+                .tabs
+                    margin: 0 auto
+                    position: relative
+                    right: 0
+                ul
+                    display: block
+                    padding: 0
+                span
+                    display: flex
+                    justify-content: center
+    @media only screen and (max-width: $mobile)
+        .is-three-quarters
+            .hero-title
+                font-size: 2em 
+                width: 100% 
+                padding: 0 
+                text-align: center 
+
 //
 // Section Two
 //
@@ -102,6 +142,22 @@
         background-image: url("../../images/home/p-2.jpeg")
     .three
         background-image: url("../../images/home/p.jpeg")
+    @media only screen and (max-width: $tablet)
+        .columns
+            height: auto
+            .hover-image
+                height: 300px
+            .sidebar
+                height: 400px
+                #bottom-blurb
+                    position: relative
+                    top: 60px
+                    margin: 0 auto
+                    width: 100% !important
+                    padding: 0 !important
+                    right: 0 !important
+                p
+                    padding: 20px
 
 
 .testimonial
@@ -113,15 +169,28 @@
         $roundImageSize: 100px
         width: $roundImageSize
         height: $roundImageSize
-        border-radius: 50px
         overflow: hidden
         img
             +coverImage()
             width: $roundImageSize
             height: $roundImageSize 
+            border-radius: 50px
     .content
         max-width: 400px
         padding: 30px
+    @media only screen and (max-width: $tablet)
+        height: 400px
+        .level-item
+            display: block
+            .image
+                margin: 0 auto
+                width: 100%
+                padding-top: 60px
+                +flexCenter()
+            .content
+                width: 100%
+                text-align: center
+                margin: 0 auto
 
 .section-three
     background-color: $mainWhite
@@ -148,6 +217,17 @@
         .bottom-right
             bottom: 0
             right: 0
+    @media only screen and (max-width: $tablet)
+        .holder
+            .bottom, .top, .top-left, .bottom-right
+                position: relative
+                display: block
+                width: 100% 
+                text-align: center
+                height: 50%
+                margin: 0 !important
+            //     position: relative
+            //     padding-top: calc(20vw) !important
 
 .fotterComp
     margin-top: -5px
