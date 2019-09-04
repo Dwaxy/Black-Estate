@@ -45,3 +45,21 @@
             // letter-spacing: 0.4px
             &:last-child
                 padding-bottom: 100px
+    @media screen and ( max-width: $tablet )
+        .section-one
+            display: block !important
+            .image-holder, .info-holder
+                height: calc(90vh - 390px) !important
+                padding: 0 !important
+                img, .info-content
+                    margin: 0 auto
+    @media screen and ( max-width: $mobile )
+        .buttons
+            display: inline-block !important
+            width: 100% 
+            margin: 0
+        .section-two
+            .is-one-quarter
+                display: none
+            .text-block
+                padding: 20px !important

@@ -1,18 +1,60 @@
 #nav-comp
     position: fixed
     width: 100%
-    background-color: $mainWhite
     z-index: 9999999
     height: 80px
-    .logo-holder
-        padding: 40px
-    .tabs 
-        position: fixed
-        right: 40px
-        *
-            border-bottom: none
-            text-decoration: none
-        li, span
-            cursor: pointer
-        .active
-            text-decoration: underline
+    top: 0
+    .nav-holder
+        background-color: $mainWhite
+        .logo-holder
+            padding: 40px
+        .tabs 
+            position: fixed
+            right: 40px
+            *
+                border-bottom: none
+                text-decoration: none
+            li, span
+                cursor: pointer
+            .active
+                text-decoration: underline
+
+    #mobile-toggle
+        width: 20px
+        height: 20px
+        display: none
+        z-index: 99999999
+        cursor: pointer
+        div
+            width: 100%
+            height: 2px
+            background-color: $mainBlack
+            margin-bottom: 5px
+
+
+    @media screen and ( max-width: $tablet )
+        height: 390px
+        .is-three-quarters, ul
+            padding: 0px !important
+            margin-top: -60px
+        .tabs
+            position: relative !important
+            right: 0 !important
+        ul
+            display: block !important 
+            span
+                display: grid
+                justify-items: center
+        .column
+            width: 340px
+            margin: 0 auto
+        .logo-holder
+            padding: 0 !important
+            padding-top: 20px !important
+            width: 300px
+            margin: 0 auto
+        #mobile-toggle
+            position: absolute
+            display: block
+            top: 30px
+            right: 30px
