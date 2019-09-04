@@ -2,15 +2,15 @@
     position: fixed
     width: 100%
     z-index: 9999999
-    height: 80px
     top: 0
+    background-color: $mainWhite
     .nav-holder
-        background-color: $mainWhite
         .logo-holder
             padding: 40px
         .tabs 
             position: fixed
             right: 40px
+            top: 0
             *
                 border-bottom: none
                 text-decoration: none
@@ -32,16 +32,17 @@
             margin-bottom: 5px
 
 
-    @media screen and ( max-width: $tablet )
-        height: 390px
+@media screen and ( max-width: $tablet )
+    #nav-comp
+        height: auto
         .is-three-quarters, ul
-            padding: 0px !important
-            margin-top: -60px
-        .tabs
-            position: relative !important
-            right: 0 !important
+            padding: 0px 
+            .tabs
+                position: relative 
+                right: 0 
+                margin-top: -30px
         ul
-            display: block !important 
+            display: block 
             span
                 display: grid
                 justify-items: center
@@ -56,5 +57,5 @@
         #mobile-toggle
             position: absolute
             display: block
-            top: 30px
-            right: 30px
+            top: 10px
+            right: 10px

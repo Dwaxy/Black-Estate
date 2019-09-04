@@ -20,18 +20,11 @@ $mobile: 500px
     .hero
       height: 100vh
     .nav-holder
-        width: 100%
-        height: 60px
-        background-color: $mainWhite
-        position: fixed
-        .tabs 
-            position: fixed
-            right: 60px
-            *
-                border-bottom: none
-                text-decoration: none
-            .active
-                text-decoration: underline
+        height: 80px
+        @media screen and ( max-width: $tablet )
+            height: auto !important
+        .logo-holder
+            display: none 
     .sidebar
         z-index: 2
         .hero-blurb

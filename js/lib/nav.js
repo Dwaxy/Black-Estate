@@ -4,7 +4,7 @@
 var navOn = true
 $("#mobile-toggle").click( function() {
   if(navOn) {
-    $(".nav-holder").fadeOut("fast"
+    $(".nav-holder").fadeOut("fast")
     navOn = false
   } else if(!navOn) {
     $(".nav-holder").fadeIn("fast")
