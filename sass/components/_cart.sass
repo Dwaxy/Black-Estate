@@ -1,10 +1,24 @@
-.display-none
-    display: none
-    
+
 #cart
     width: 250px
-    height: 100vh
+    height: calc(100% - 80px)
     overflow-y: scroll
+    z-index: 999
+    position: fixed
+    right: 0
+    top: 80px
+    border: 1px solid pink
+    box-shadow: 10px 10px 135px -80px rgba(0,0,0,0.75)
+    background-color: $mainWhite
+    @media screen and ( max-width: $tablet )
+        width: 100%
+    #close-cart
+        background-image: url("../../images/icons/cancel.png")
+        margin: 20px
+        width: 20px
+        height: 20px
+        +coverImage()
+        cursor: pointer
     .line
         width: 130px
         height: 2px
@@ -17,7 +31,13 @@
             padding: 30px
     .cart-item
         padding: 20px
+        margin: 0 auto
         .image-holder
+            margin: 0 auto
+            +flexCenter()
+            img
+                height: 300px
+                +coverImage()
         .info-holder
             display: flex
             h3
@@ -25,6 +45,8 @@
     
     .cart-buttons
         padding: 30px
+        text-align: center
+        cursor: pointer
         .check-out
             font-size: 25px
             padding: 20px
@@ -33,25 +55,3 @@
             font-size: 20px
 
         
-
-
-
-
-// <!-- CART COMP -->
-//     <div id="cart">
-//         <div class="close-cart">X</div>
-
-//         <div class="cart-item">
-//             <div class="image-golder"></div>
-//             <h3>Damsteep Riesling 2018</h3>
-//             <span class="price">$38</span>
-//         </div>
-
-//         <div class="cart-buttons">
-//             <div class="check-out"></div>
-//             <div class="line"></div>
-//             <div class="clear-cart"></div>
-//         </div>
-
-//     </div>
-//     <!-- END CART COMP -->

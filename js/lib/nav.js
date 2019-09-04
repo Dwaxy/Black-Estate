@@ -16,7 +16,7 @@ $("#mobile-toggle").click( function() {
 
 var navShowOnScroll
 const checkNavIsMobile = function() {
-  if($(window).width() < 969) {
+  if($(window).width() < 1030) {
     navShowOnScroll = false
   } else {
     navShowOnScroll = true

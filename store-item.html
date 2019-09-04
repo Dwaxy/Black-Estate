@@ -28,7 +28,7 @@
                             <li><a>Accommodation</a></li>
                             <li><a>Restarunt</a></li>
                             <li><a>Vineyard</a></li>
-                            <span> <img src="images/icons/icons8-shopping-cart-30.png" alt="Shopping Cart""></span>
+                            <span id="open-cart"> <img src="images/icons/icons8-shopping-cart-30.png" alt="Shopping Cart""></span>
                         </ul>
                     </div>
                 </div>
@@ -42,6 +42,27 @@
             </div>
         </div>
         <!-- END NAV -->
+
+        <!-- CART COMP -->
+        <div id="cart">
+            <div id="close-cart"></div>
+    
+            <div class="cart-item">
+                <div class="image-holder">
+                    <img src="images/bottles/Circuit Pinot Noir 2014.jpg" alt="Circuit Pinot Noir 2014">
+                </div>
+                <h3>Damsteep Riesling 2018</h3>
+                <span class="price">$38</span>
+            </div>
+    
+            <div class="cart-buttons">
+                <div class="check-out">Cheek Out</div>
+                <div class="line"></div>
+                <div class="clear-cart">Clear Cart</div>
+            </div>
+    
+        </div>
+        <!-- END CART COMP -->
 
         <section class="section-one">
             <div class="columns">
@@ -71,7 +92,7 @@
             </div>
 
             <div class="buttons columns is-desktop">
-                <div class="column add-to-cart">Add to Cart</div>
+                <div class="column add-to-cart" id="add-to-cart">Add to Cart</div>
                 <div class="column buy-now">Buy Now</div>
                 <div class="column tasting-notes">Tasting Notes</div>
             </div>
@@ -132,5 +153,6 @@
     </div>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="js/lib/nav.js"></script>
+    <script src="js/lib/cart.js"></script>
 </body>
 </html>
