@@ -9,7 +9,7 @@ const bottomBLurbWaypoint = new Waypoint({
   handler: function(direction) {
     if (direction === "down") {
       //bottomBlurb.classList.add("fadeInUp", "ainimated")
-      $("#bottom-blurb").attr('class', 'animated fadeInUp hero-blurb slow')
+      $("#bottom-blurb").attr('class', 'animated fadeInDown hero-blurb slow')
       $("#top-blurb").attr('class', 'animated fadeOutDown hero-blurb slow')
       console.log("down")
     }
